@@ -46,3 +46,22 @@ print(fake_CN.random_letter())
 
 # address 将生成一个详细地址 及邮编
 print(fake_CN.address())  # 安徽省汕尾市黄浦梁街B座 684002
+
+# 生成1个城市名
+print(fake_CN.city())  # 成都县
+
+# 生成国家
+print(fake_CN.country())  # 圣文森特岛
+
+# 邮政编码
+print(fake_CN.postcode())  # 301622
+
+# 街道地址
+print(fake_CN.street_address())  # 301622
+
+# 号码牌
+print(fake_CN.license_plate())  # CTK 776
+
+# 银行卡号
+print(fake_CN.bban())  # 18位
+print(fake_CN.iban())  # 22位
