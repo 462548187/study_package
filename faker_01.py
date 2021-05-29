@@ -37,7 +37,7 @@ print(fake_CN.bothify(text='产品编号：??-#######', letters='JD'))  # 产品
 print(fake_CN.hexify(text='MAC地址：^^:^^:^^:^^:^^', upper=True))  # MAC地址：B8:6F:93:50:D1
 
 # text 中 # 将替换成0-9的数字， % 将替换成1-9的数字， !将替换成一个随机数字或空字符串， @ 将替换成一个随机的非零数字或一个空字符串
-print(fake_CN.numerify(text='Inter core i%-%%##K vs AMD Ryzen % %%##X'))  # Inter core i1-1113K vs AMD Ryzen 6 6157X
+print(fake_CN.numerify(text='Inter core i%-%%##K vs AMD Ruzena % %%##X'))  # Inter core i1-1113K vs AMD Ruzena 6 6157X
 
 # 随机生成a-z A-Z
 print(fake_CN.random_letter())
@@ -65,3 +65,31 @@ print(fake_CN.license_plate())  # CTK 776
 # 银行卡号
 print(fake_CN.bban())  # 18位
 print(fake_CN.iban())  # 22位
+
+# ean(length, prefixes) 条形码，length条形码总长--只能是8或13位（默认），prefixes需传递一个元组，如果定义了将随机去元组中某一个字符串
+# 并加上在生成的条码前
+print(fake_CN.ean(length=13, prefixes=('2020', '2018')))  # 2018020495216
+
+# 生成颜色 名称
+print(fake_CN.color_name())  # WhiteSmoke
+
+# 生成颜色 RGB
+print(fake_CN.rgb_css_color())  # rgb(122,67,162)
+
+# 生成颜色 代码
+print(fake_CN.hex_color())  # #2a0c42
+
+# 公司名称
+print(fake_CN.company())  # 方正科技信息有限公司
+
+# 信用卡卡号
+print(fake_CN.credit_card_number())  # 213190350181790
+
+# 货币符合
+print(fake_CN.currency_symbol())  # ƒ
+
+# 获取时间：默认格式 %Y-%m-%d #2000-09-02
+print(fake_CN.date())  # 2007-05-20
+
+# 时间格式
+print(fake_CN.date(pattern='%Y-%m-%d %H:%M:%S'))  # 1981-08-20 20:15:48
