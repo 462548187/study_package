@@ -93,3 +93,49 @@ print(fake_CN.date())  # 2007-05-20
 
 # 时间格式
 print(fake_CN.date(pattern='%Y-%m-%d %H:%M:%S'))  # 1981-08-20 20:15:48
+
+# 文件名
+print(fake_CN.file_name())  # 实现.odp
+
+# 生成office类型的文件（后缀名 将都是office里面的其中一个）
+print(fake_CN.file_name(category='office'))  # 这是.xls
+
+# 电子邮箱
+print(fake_CN.free_email())  # vyi@hotmail.com
+
+# 图片链接
+print(fake_CN.image_url())  # https://placeimg.com/650/96/any
+
+# IPV4地址
+print(fake_CN.ipv4_public())  # 217.147.136.196
+
+# MAC地址
+print(fake_CN.mac_address())  # 8d:73:34:cb:6f:ca
+
+# 职业
+print(fake_CN.job())  # 汽车机构工程师
+
+# 生成一个随机字符串 字符串最大长度默认 200， 最小长度5
+print(fake_CN.text())
+print(fake_CN.text(max_nb_chars=5))  # 城市政府.
+
+# 生成随机长度的二进制串，默认长度1048576
+print(fake_CN.binary(10))  # b'u\x10\x90\x92S\xca\x03\xecg1'
+
+# 女性的名字
+print(fake_CN.name_female())  # 张倩
+
+# 男性的名字
+print(fake_CN.name_male())  # 马涛
+
+# 手机号码
+print(fake_CN.phone_number())  # 13769390972
+
+# 生成个人资料
+print(fake_CN.profile())
+
+# 身份证号
+print(fake_CN.ssn())  # 410883194804219622
+
+# 用户代理
+print(fake_CN.user_agent())  # Mozilla/5.0 (compatible; MSIE 5.0; Windows 95; Trident/5.0)
