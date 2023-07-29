@@ -1,4 +1,4 @@
-certifi==2020.12.5
+certifi==2023.7.22
 Faker @ file:///tmp/build/80754af9/faker_1622099610925/work
 python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
 six @ file:///opt/concourse/worker/volumes/live/34b5b2b5-c9cb-44fb-4b8e-8a9a881bfa35/volume/six_1605205329242/work
